@@ -6,17 +6,21 @@ header{
 	font-family: 'Montserrat', sans-serif;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:550px){
+
+	/*Nombre que baja*/
 	h2#nombre{
 		background-color: #ffffff;
 		opacity: 0.5;
 		font-size: 20px;
 		text-align: center;
 		position: relative;
-		bottom: -130px;
+		bottom: -160px;
 		z-index: 1;     /* trae al frente */
+	}
 
-
+	h2{
+		text-align: center;
 	}
 
 	h3, #periodo{
@@ -44,6 +48,7 @@ header{
 		display: inline;
 	}
 	p{
+		display: inline!important;
 		margin: 4px;
 	}
 	#materia{      /*desaparece materia*/
@@ -73,7 +78,7 @@ header{
 		padding: 5px!important;
 	}
 
-	#fig{
+	.espol,.alfaro{
 		margin: 4px 2px !important;
 		height: 150px;
 		width: auto!important;
@@ -83,23 +88,42 @@ header{
 		width: 100%!important;
 	}
 
+	/* caja de la foto*/
 	.foto{
-		height: 140px!important;
+		margin: 4px 2px !important;
+		/*height: 150px;*/
+		width: auto!important;
+		/*max-height: 60%!important;*/
+		/*position: relative;
+		top: -20px;*/
 	}
-	#foto{
-		margin: 10px 10%!important;
-		width: 190px!important;
-		position: absolute;
-		top: 250px;
 
+	/* foto en si*/
+	#foto{
+		margin: 10px 20%!important;
+		width: 60%!important;
+		height: 100%!important;
+		/*position: relative;
+		top: -100px;
+		*/
 	}
-	/*#vida{
-		height: 200px;
-	}*/
+
+	/*caja de la foto*/
+	.primera{
+		height: 280px!important;
+		margin-top: 20px!important;
+	}
+
+	/*texto debajo de la foto*/
 	.principal{
 		text-align: center!important;
+		/*margin-top: 5%!important;*/
 	}
-
+	/*contenedor de foto e info sube */
+	#vida{
+		position: relative;
+		top: -100px;
+	}
 	p#ing{
 		display: none;
 	}
@@ -111,6 +135,13 @@ header{
 	ul{
 		padding: 0;
 		margin: 0;
+	}
+
+	#habilidad::after{
+		content: ",";
+	}
+	#habilidad_final::after{
+		content: ".";
 	}
 
 }
